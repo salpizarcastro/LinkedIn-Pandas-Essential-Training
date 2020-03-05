@@ -1,0 +1,990 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print('Hello world')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = 99\n",
+    "print(x)\n",
+    "y = x + 1\n",
+    "print(y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(type(1))\n",
+    "print(type(1.1))\n",
+    "print(type('Hello World'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(59/60)\n",
+    "print(59//60)\n",
+    "59//60\n",
+    "2**2\n",
+    "reminder = 7 % 3\n",
+    "print(reminder)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Comments \n",
+    "print('aaa' + 'bbb')\n",
+    "print('a' * 10)\n",
+    "\n",
+    "x = input('Whats your value? \\n')\n",
+    "print(x)\n",
+    "print(type(int('500')))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = input()\n",
+    "\n",
+    "try:\n",
+    "    if int(x) < 2:\n",
+    "        print('do something')\n",
+    "    elif int(x) == 2:\n",
+    "        print('do something else')\n",
+    "    else:\n",
+    "        print('nothing works!')\n",
+    "except:\n",
+    "    print('f... idiot!')\n",
+    "    \n",
+    "print('done')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import math\n",
+    "print(math.pi)\n",
+    "print(int(math.sqrt(4)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "import random\n",
+    "\n",
+    "def my_random(num):\n",
+    "    for i in range(num):\n",
+    "        #x = int(random.random() * 100)\n",
+    "        x = random.randint(1, 100)\n",
+    "        print(x)\n",
+    "\n",
+    "my_random(5)\n",
+    "type(my_random)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "collection = [45, 59, 93, 28, 84, 97, 29, 32, 30, 28, 86, 72, 100, 4, 87, 57, 93, 58, 2, 99]\n",
+    "print(random.choice(collection))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def multiply_by_30(x):\n",
+    "    x = x * 30\n",
+    "    return x\n",
+    "\n",
+    "x = multiply_by_30(5)\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "n = 1\n",
+    "i = 10\n",
+    "while i >= 0:\n",
+    "    n = n * 2\n",
+    "    print(n)\n",
+    "    i = i - 1\n",
+    "print('exponential!')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import random\n",
+    "x = random.randint(1, 100)\n",
+    "print(x)\n",
+    "print(x % 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "while 'true':\n",
+    "    n = input()\n",
+    "    if n == 'done':\n",
+    "        break\n",
+    "    else:\n",
+    "        print('not done')\n",
+    "        \n",
+    "while 'true':\n",
+    "    x = random.randint(1, 100)\n",
+    "    print(x)\n",
+    "    if x % 2 == 0:\n",
+    "        continue\n",
+    "    else:\n",
+    "        print(x)\n",
+    "        break\n",
+    "\n",
+    "print('all done')        \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+    "x = 0\n",
+    "for numero in lista:\n",
+    "    print(numero)\n",
+    "    x = x + 1\n",
+    "    \n",
+    "print('elements: ', str(x))\n",
+    "print(len(lista))\n",
+    "print(sum(lista))\n",
+    "\n",
+    "\n",
+    "lista = [1, 22, 13, 45, 5, 16, 27, 8, 39, 10]\n",
+    "x = 0\n",
+    "for numero in lista:\n",
+    "    #print(numero)\n",
+    "    if x == 0 or x < numero:\n",
+    "        x = numero\n",
+    "    else:\n",
+    "        continue\n",
+    "\n",
+    "print('largest number:', x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "fruit = 'banana'\n",
+    "print(fruit[0])\n",
+    "len(fruit)\n",
+    "print(fruit[len(fruit) - 1])\n",
+    "print(fruit[-2])\n",
+    "\n",
+    "index = 0\n",
+    "while index < len(fruit):\n",
+    "    print(fruit[index])\n",
+    "    index = index + 1\n",
+    "    \n",
+    "x = 'abcdefghijklmnopqrstuvwxyz'\n",
+    "print(x[5:9])\n",
+    "print(x[:9])\n",
+    "print('abc' in x)\n",
+    "print('Sandra' < 'sandra')\n",
+    "##dir(x)\n",
+    "print(x.capitalize().lower().startswith('abc'))\n",
+    "print(x.find('s'))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = 55\n",
+    "'some text %d more text %g bla bla bla %s more bla' % (x, 0.1, 'ble')\n",
+    "print('N\\nY')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "##print(open('spark.log'))\n",
+    "cnt = 0 \n",
+    "try:\n",
+    "    log = open('spark.log')\n",
+    "    for line in log:\n",
+    "        ##print(line)\n",
+    "        ##print(line[0:10])\n",
+    "        for word in line:\n",
+    "            cnt = cnt + 1\n",
+    "    print(cnt)\n",
+    "except:\n",
+    "    print('cant find file')\n",
+    "    \n",
+    "\n",
+    "#print(len(log.read())) ##to big for a string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "nuevo = open('file.txt', 'w')\n",
+    "nuevo.write('hello world!\\n')\n",
+    "nuevo.close()\n",
+    "nuevo = open('file.txt')\n",
+    "for line in nuevo:\n",
+    "    print(line)\n",
+    "    print(repr(line))\n",
+    "#print(nuevo)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lista = [1, 2, 3, 4, 5, 6]\n",
+    "lista[3] = 999\n",
+    "print(lista)\n",
+    "print(lista[-1])\n",
+    "999 in lista\n",
+    "\n",
+    "print(len(lista))\n",
+    "for i in range(len(lista)):\n",
+    "    lista[i] = lista[i] + 1\n",
+    "print(lista)\n",
+    "\n",
+    "print([1, 2, 3] + [4, 5, 6])\n",
+    "print([0] * 10)\n",
+    "lista.sort()\n",
+    "print(lista)\n",
+    "print(lista.pop(0)) ##pop returns the value to be deleted\n",
+    "print(lista)\n",
+    "lista.remove(1000)\n",
+    "print(lista)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lista = []\n",
+    "\n",
+    "while(True):\n",
+    "    x = input('numero:')\n",
+    "    if x == 'done':\n",
+    "        break\n",
+    "    elif x == '':\n",
+    "        continue\n",
+    "    lista.append(float(x))\n",
+    "\n",
+    "print(sum(lista))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lista = list('Sandrita')\n",
+    "print(lista)\n",
+    "x = 'Sandrita la mas bonita'\n",
+    "lista = x.split(' ')\n",
+    "print(lista)\n",
+    "x = '-'.join(lista)\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "largest = None\n",
+    "for i in [99, 9, 999, 2222, 10000, 1]:\n",
+    "    if largest == None or i > largest:\n",
+    "        largest = i\n",
+    "print(largest)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = [1, 2, 3]\n",
+    "b = [1, 2, 3]\n",
+    "print(a == b)\n",
+    "print(a is b)\n",
+    "b = a\n",
+    "print(a is b)\n",
+    "a.append(4)\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "xtoy = dict()\n",
+    "xtoy = {'one':'uno', 'two':'dos', 'three':'tres'}\n",
+    "print(xtoy)\n",
+    "print(xtoy['two'])\n",
+    "##print(xtoy['four'])\n",
+    "print('two' in xtoy)\n",
+    "y = list(xtoy.values())\n",
+    "x = list(xtoy.keys())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "word = 'brontosaurius'\n",
+    "d = dict()\n",
+    "for x in word:\n",
+    "    if x not in d:\n",
+    "        d[x] = 1\n",
+    "    else:\n",
+    "        d[x] = d[x] + 1\n",
+    "print(d)\n",
+    "print(d.get('o', 200))\n",
+    "print(d.get('x', 200))\n",
+    "\n",
+    "new_d = dict()\n",
+    "for x in word:\n",
+    "    new_d[x] = new_d.get(x, 0) + 1\n",
+    "print(new_d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fname = input('enter file here:')\n",
+    "try:\n",
+    "    fhand = open(fname)\n",
+    "except:\n",
+    "    print('errooooooooor!')\n",
+    "    exit()\n",
+    "\n",
+    "cuenta = dict()\n",
+    "for line in fhand:\n",
+    "    words = line.split()\n",
+    "    for word in words:\n",
+    "        word = word.lower()\n",
+    "        cuenta[word] = cuenta.get(word, 0) + 1\n",
+    "\n",
+    "print(cuenta)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for key in cuenta:\n",
+    "    print(key, cuenta[key], 'hola')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "lst = list(cuenta)\n",
+    "lst.sort()\n",
+    "for x in lst:\n",
+    "    print(x, cuenta[x])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import string\n",
+    "print(string.punctuation)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "file = open('text.txt')\n",
+    "cuenta = dict()\n",
+    "for line in file:\n",
+    "    print(line)\n",
+    "    line = line.rstrip()\n",
+    "    line = line.translate(line.maketrans('', '', string.punctuation)).lower()\n",
+    "    print(line)\n",
+    "    words = line.split()\n",
+    "    for word in words:\n",
+    "        cuenta[word] = cuenta.get(word, 0) + 1\n",
+    "\n",
+    "print(cuenta)\n",
+    "\n",
+    "#sort\n",
+    "lista = list()\n",
+    "for word, count in list(cuenta.items()):\n",
+    "    lista.append((count, word))\n",
+    "\n",
+    "lista.sort(reverse = True)\n",
+    "print(lista)\n",
+    "\n",
+    "#print top 3\n",
+    "for count, word in lista[:3]:\n",
+    "    print(word, count)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "tupla = ('x',) #without the comma is just a string\n",
+    "type(tupla)\n",
+    "tupla = tuple('tuplita')\n",
+    "print(tupla)\n",
+    "print(tupla[0])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "texto = 'but soft what light in yonder window breaks'\n",
+    "t = list()\n",
+    "words = texto.split()\n",
+    "for word in words:\n",
+    "    t.append((len(word), word))\n",
+    "t.sort(reverse = True)\n",
+    "print(t)\n",
+    "type(t[0])\n",
+    "\n",
+    "res = list()\n",
+    "for lenght, word in t:\n",
+    "    res.append(word)\n",
+    "print(res)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "m = ['a', 'b']\n",
+    "x, y = m\n",
+    "#same as (x, y) = m\n",
+    "print(x)\n",
+    "print(y)\n",
+    "y, x = x, y\n",
+    "print(x)\n",
+    "print(y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#reguilar expresions\n",
+    "import re\n",
+    "file = open('text.txt')\n",
+    "for line in file:\n",
+    "    line = line.rstrip()\n",
+    "    line = line.translate(line.maketrans('', '', string.punctuation)).lower()\n",
+    "    ##if re.search('moon', line):\n",
+    "    if re.search('^b.t', line): \n",
+    "        print(line)\n",
+    "\n",
+    "        \n",
+    "#^ begining of line\n",
+    "#. any character\n",
+    "# * or + indicates any number of times (.*) - (* zero to more,  + 1 or more)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import re, string\n",
+    "s = 'A message from <csev@umich.edu> to <cwen@iupui.edu>; about meeting @2PM'\n",
+    "#s = s.translate(s.maketrans('', '', string.punctuation))\n",
+    "s = s.rstrip()\n",
+    "list = re.findall('\\S+@\\S+', s)\n",
+    "print(list)\n",
+    "list = re.findall('[a-zA-Z0-9]\\S+@\\S+[a-zA-Z0-9]', s)\n",
+    "print(list)\n",
+    "\n",
+    "#\\S non white space"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import re, string\n",
+    "file = open('text.txt')\n",
+    "\n",
+    "for line in file:\n",
+    "    line = line.rstrip()\n",
+    "    list = re.findall('^X\\S*: ([0-9.]+)', line)\n",
+    "\n",
+    "    print(list)\n",
+    "    \n",
+    "#() match expression but only return the portion of interest."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import re, string\n",
+    "\n",
+    "mystring = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'\n",
+    "print(re.findall('^From .* ([0-9][0-9]:[0-9][0-9])', mystring))\n",
+    "\n",
+    "money = 'We just received $10.00 for cookies.'\n",
+    "print(re.findall('\\$[0-9.]+', money))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Regular expressions:\n",
+    "#^ Matches the beginning of the line. \n",
+    "#$ Matches the end of the line. \n",
+    "#. Matches any character (a wildcard). \n",
+    "#\\s Matches a whitespace character. \n",
+    "#\\S Matches a non-whitespace character (opposite of \\s). \n",
+    "#* Applies to the immediately preceding character(s) and indicates to match zero or more times. \n",
+    "#*? Applies to the immediately preceding character(s) and indicates to match zero or more times in \"non-greedy mode\". \n",
+    "#+ Applies to the immediately preceding character(s) and indicates to match one or more times. \n",
+    "#+? Applies to the immediately preceding character(s) and indicates to match one or more times in \"non-greedy mode\".\n",
+    "#? Applies to the immediately preceding character(s) and indicates to match zero or one time. \n",
+    "#?? Applies to the immediately preceding character(s) and indicates to match zero or one time in \"non-greedy mode\". \n",
+    "#[aeiou] Matches a single character as long as that character is in the specified set. In this example, it would match \"a\", \"e\", \"i\", \"o\", or \"u\", but no other characters. \n",
+    "#[a-z0-9] You can specify ranges of characters using the minus sign. This example is a single character that must be a lowercase letter or a digit. \n",
+    "#[^A-Za-z] When the first character in the set notation is a caret, it inverts the logic. This example matches a single character that is anything other than an uppercase or lowercase letter. \n",
+    "#( ) When parentheses are added to a regular expression, they are ignored for the purpose of matching, but allow you to extract a particular subset of the matched string rather than the whole string when using findall(). \n",
+    "#\\b Matches the empty string, but only at the start or end of a word. \n",
+    "#\\B Matches the empty string, but not at the start or end of a word. \n",
+    "#\\d Matches any decimal digit; equivalent to the set [0-9]. \n",
+    "#\\D Matches any non-digit character; equivalent to the set [^0-9].\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Pending parse HTML module\n",
+    "import socket\n",
+    "\n",
+    "mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) \n",
+    "mysock.connect(('data.pr4e.org', 80)) \n",
+    "cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\\r\\n\\r\\n'.encode() \n",
+    "mysock.send(cmd) \n",
+    "\n",
+    "while True:     \n",
+    "    data = mysock.recv(512)     \n",
+    "    if len(data) < 1:         \n",
+    "        break     \n",
+    "    print(data.decode(),end='') \n",
+    "    \n",
+    "mysock.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Web services\n",
+    "import xml.etree.ElementTree as ET\n",
+    "xml = '''<person>   \n",
+    "        <name>Chuck</name>   \n",
+    "        <phone type=\"intl\">+1 734 303 4456</phone>   \n",
+    "        <email hide=\"yes\" /> \n",
+    "    </person>'''\n",
+    "\n",
+    "tree = ET.fromstring(xml)\n",
+    "print(tree.find('name').text)\n",
+    "print(tree.find('email').get('hide'))\n",
+    "\n",
+    "#''' indicate strings that span multiple lines"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "xml = ''' \n",
+    "    <stuff>   \n",
+    "        <users>     \n",
+    "            <user x=\"2\">       \n",
+    "                <id>001</id>       \n",
+    "                <name>Chuck</name>     \n",
+    "            </user>     \n",
+    "            <user x=\"7\">       \n",
+    "                <id>009</id>       \n",
+    "                <name>Brent</name>     \n",
+    "            </user>   \n",
+    "        </users> \n",
+    "    </stuff>'''\n",
+    "\n",
+    "stuff = ET.fromstring(xml)\n",
+    "lista = stuff.findall('users/user')\n",
+    "print(len(lista))\n",
+    "\n",
+    "for user in lista:\n",
+    "    print('id:', user.find('id').text)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import json\n",
+    "\n",
+    "jsoncito = ''' \n",
+    "    [\n",
+    "        { \"id\" : \"001\",\n",
+    "            \"x\" : \"2\",\n",
+    "            \"name\" : \"Chuck\" \n",
+    "        },\n",
+    "        { \"id\" : \"009\",\n",
+    "            \"x\" : \"7\",\n",
+    "            \"name\" : \"Brent\" \n",
+    "        } \n",
+    "    ]'''\n",
+    "\n",
+    "\n",
+    "stuff = json.loads(jsoncito)\n",
+    "#this gets a list with embedded dictionaries\n",
+    "print('count: ', len(stuff))\n",
+    "for user in stuff:\n",
+    "    print('name', user['name'])\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Pending APIs\n",
+    "#http://g.co/dev/maps-no-account\n",
+    "#http://maps.googleapis.com/maps/api/geocode/json?address=Ann+Arbor%2C+MI\n",
+    "import urllib.request, urllib.parse, urllib.error\n",
+    "import json\n",
+    "import ssl\n",
+    "\n",
+    "api_key = False \n",
+    "# If you have a Google Places API key, enter it here \n",
+    "# api_key = 'AIzaSy___IDByT70' \n",
+    "# https://developers.google.com/maps/documentation/geocoding/intro \n",
+    "\n",
+    "if api_key is False:     \n",
+    "    api_key = 42     \n",
+    "    serviceurl = 'http://py4e-data.dr-chuck.net/json?' \n",
+    "else :     \n",
+    "    serviceurl = 'https://maps.googleapis.com/maps/api/geocode/json?' \n",
+    "    \n",
+    "# Ignore SSL certificate errors \n",
+    "ctx = ssl.create_default_context() \n",
+    "ctx.check_hostname = False \n",
+    "ctx.verify_mode = ssl.CERT_NONE \n",
+    "\n",
+    "while True:     \n",
+    "    address = input('Enter location: ')     \n",
+    "    if len(address) < 1: break     \n",
+    "        \n",
+    "    parms = dict()     \n",
+    "    parms['address'] = address     \n",
+    "    if api_key is not False: parms['key'] = api_key     \n",
+    "    url = serviceurl + urllib.parse.urlencode(parms)     \n",
+    "    \n",
+    "    print('Retrieving', url)\n",
+    "    \n",
+    "    uh = urllib.request.urlopen(url, context=ctx)     \n",
+    "    data = uh.read().decode()     \n",
+    "    print('Retrieved', len(data), 'characters')     \n",
+    "    \n",
+    "    try:         \n",
+    "        js = json.loads(data)     \n",
+    "    except:         \n",
+    "        js = None     \n",
+    "        \n",
+    "    if not js or 'status' not in js or js['status'] != 'OK':         \n",
+    "        print('==== Failure To Retrieve ====')         \n",
+    "        print(data)         \n",
+    "        continue     \n",
+    "        \n",
+    "    print(json.dumps(js, indent=4))     \n",
+    "    \n",
+    "    lat = js['results'][0]['geometry']['location']['lat']    \n",
+    "    lng = js['results'][0]['geometry']['location']['lng']     \n",
+    "    print('lat', lat, 'lng', lng)     \n",
+    "    location = js['results'][0]['formatted_address']     \n",
+    "    print(location)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['__add__',\n",
+       " '__class__',\n",
+       " '__contains__',\n",
+       " '__delattr__',\n",
+       " '__delitem__',\n",
+       " '__dir__',\n",
+       " '__doc__',\n",
+       " '__eq__',\n",
+       " '__format__',\n",
+       " '__ge__',\n",
+       " '__getattribute__',\n",
+       " '__getitem__',\n",
+       " '__gt__',\n",
+       " '__hash__',\n",
+       " '__iadd__',\n",
+       " '__imul__',\n",
+       " '__init__',\n",
+       " '__init_subclass__',\n",
+       " '__iter__',\n",
+       " '__le__',\n",
+       " '__len__',\n",
+       " '__lt__',\n",
+       " '__mul__',\n",
+       " '__ne__',\n",
+       " '__new__',\n",
+       " '__reduce__',\n",
+       " '__reduce_ex__',\n",
+       " '__repr__',\n",
+       " '__reversed__',\n",
+       " '__rmul__',\n",
+       " '__setattr__',\n",
+       " '__setitem__',\n",
+       " '__sizeof__',\n",
+       " '__str__',\n",
+       " '__subclasshook__',\n",
+       " 'append',\n",
+       " 'clear',\n",
+       " 'copy',\n",
+       " 'count',\n",
+       " 'extend',\n",
+       " 'index',\n",
+       " 'insert',\n",
+       " 'pop',\n",
+       " 'remove',\n",
+       " 'reverse',\n",
+       " 'sort']"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "stuff = list()\n",
+    "dir(stuff)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I am constructed\n",
+      "So far 1\n",
+      "So far 2\n",
+      "Destructed:  2\n",
+      "100\n"
+     ]
+    }
+   ],
+   "source": [
+    "class PartyAnimal:\n",
+    "    x = 0 \n",
+    "    \n",
+    "    def __init__(self):\n",
+    "        print('I am constructed')\n",
+    "        \n",
+    "    def party(self):\n",
+    "        self.x = self.x + 1\n",
+    "        print('So far', self.x)\n",
+    "    \n",
+    "    def __del__(self):\n",
+    "        print('Destructed: ', self.x)\n",
+    " \n",
+    "an = PartyAnimal()\n",
+    "an.party()\n",
+    "an.party()\n",
+    "an = 100\n",
+    "print(an)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class PartyAnimal:\n",
+    "    x = 0 \n",
+    "    name = ''\n",
+    "    \n",
+    "    def __init__(self, nam):\n",
+    "        name = nam\n",
+    "        print(nam, 'is constructed')\n",
+    "        \n",
+    "    def party(self):\n",
+    "        self.x = self.x + 1\n",
+    "        print('So far', self.x)\n",
+    "    \n",
+    "    def __del__(self):\n",
+    "        print('Destructed: ', self.x)\n",
+    " \n",
+    "an = PartyAnimal('nombre')\n",
+    "an.party()\n",
+    "an.party()\n",
+    "an = 100\n",
+    "print(an)\n",
+    "\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "hide_input": false,
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
